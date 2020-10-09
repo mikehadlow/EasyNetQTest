@@ -8,7 +8,8 @@ namespace Subscriber
     {
         static void Main(string[] args)
         {
-            using (var bus = RabbitHutch.CreateBus("host=localhost"))
+            using (var bus = RabbitHutch.CreateBus("amqp://localhost/;timeout=72"))
+            //using (var bus = RabbitHutch.CreateBus("host=localhost;timeout=72"))
             {
                 bus.Subscribe<TextMessage>("test", HandleTextMessage);
 

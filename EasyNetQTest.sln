@@ -1,11 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "Messages\Messages.csproj", "{D41517EE-E431-4C9E-9AC0-413996177830}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Publisher", "Publisher\Publisher.csproj", "{85398953-8F1A-411E-928E-5430122C48B4}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Subscriber", "Subscriber\Subscriber.csproj", "{9A4B8B84-3C3F-4297-9DCE-A44DE4B7BA3B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RabbitMqClientConnection", "RabbitMqClientConnection\RabbitMqClientConnection.csproj", "{FFBB51B0-8D2C-4A27-BC54-BC60227E4D38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiBindingTestProducer", "MultiBindingTestProducer\MultiBindingTestProducer.csproj", "{DBECD532-AD77-4B23-B191-DE376FE866D4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MultiBindingTestConsumer", "MultiBindingTestConsumer\MultiBindingTestConsumer.csproj", "{55B26BED-6521-4692-B5A0-7145E53546AC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,8 +33,23 @@ Global
 		{9A4B8B84-3C3F-4297-9DCE-A44DE4B7BA3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A4B8B84-3C3F-4297-9DCE-A44DE4B7BA3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A4B8B84-3C3F-4297-9DCE-A44DE4B7BA3B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FFBB51B0-8D2C-4A27-BC54-BC60227E4D38}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FFBB51B0-8D2C-4A27-BC54-BC60227E4D38}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FFBB51B0-8D2C-4A27-BC54-BC60227E4D38}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FFBB51B0-8D2C-4A27-BC54-BC60227E4D38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DBECD532-AD77-4B23-B191-DE376FE866D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DBECD532-AD77-4B23-B191-DE376FE866D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DBECD532-AD77-4B23-B191-DE376FE866D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DBECD532-AD77-4B23-B191-DE376FE866D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55B26BED-6521-4692-B5A0-7145E53546AC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B26BED-6521-4692-B5A0-7145E53546AC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B26BED-6521-4692-B5A0-7145E53546AC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B26BED-6521-4692-B5A0-7145E53546AC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {056934DF-95DA-41BB-8C1A-DB77DDF9D938}
 	EndGlobalSection
 EndGlobal
